@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "2.2",
+  "description": "Example",
+  "parameters": {
+    "Message": {
+      "type": "String",
+      "description": "Example",
+      "default": "Hello Planet",
+      "interpolationType": "ENV_VAR"
+    },
+    "AnotherMessage": {
+      "type": "String",
+      "description": "Example",
+      "default": "Hello World",
+      "interpolationType": "None"
+    }
+  },
+  "mainSteps": [
+    {
+      "action": "aws:runPowerShellScript",
+      "name": "example",
+      "inputs": {
+        "runCommand": [
+          "Write-Output {{Message}}",
+          "Write-Output {{AnotherMessage}}"
+        ]
+      }
+    },
+    {
+      "action": "aws:runShellScript",
+      "name": "example",
+      "inputs": {
+        "runCommand": [
+          "Write-Output {{Message}}",
+          "Write-Output {{AnotherMessage}}"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "additionalInfo": {
+    "agent": {
+      "lang": "en-US",
+      "name": "EC2Config",
+      "os": "Linux",
+      "osver": "2",
+      "ver": "1"
+    },
+    "dateTime": "2015-07-09T23:23:40.023Z",
+    "runtimeStatusCounts": {
+    }
+  },
+  "documentStatus": "Success",
+  "documentTraceOutput": "",
+  "runtimeStatus": {
+  }
+}
